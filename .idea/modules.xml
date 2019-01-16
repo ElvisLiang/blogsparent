@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../blogsparent/blogs-auth-service/blogs-auth-service.iml" filepath="$PROJECT_DIR$/../blogsparent/blogs-auth-service/blogs-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blogsparent/blogs-eureka-server/blogs-eureka-server.iml" filepath="$PROJECT_DIR$/../blogsparent/blogs-eureka-server/blogs-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogs-parent.iml" filepath="$PROJECT_DIR$/blogs-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blogsparent/blogs-route-service/blogs-route-server.iml" filepath="$PROJECT_DIR$/../blogsparent/blogs-route-service/blogs-route-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blogsparent/blogs-user-service/blogs-user-server.iml" filepath="$PROJECT_DIR$/../blogsparent/blogs-user-service/blogs-user-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="blogs-auth-service" />
+        <module name="blogs-eureka-server" />
+        <module name="blogs-exalt-eureka" />
+        <module name="blogs-exalt-route" />
+        <module name="blogs-exalt-user" />
+        <module name="blogs-route-server" />
+        <module name="blogs-user-server" />
+        <module name="blogsparent" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blogs-auth-service" target="1.8" />
+      <module name="blogs-eureka-server" target="1.8" />
+      <module name="blogs-exalt-eureka" target="1.8" />
+      <module name="blogs-exalt-route" target="1.8" />
+      <module name="blogs-exalt-user" target="1.8" />
+      <module name="blogs-parent" target="1.8" />
+      <module name="blogs-route-server" target="1.8" />
+      <module name="blogs-user-server" target="1.8" />
+      <module name="blogsparent" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

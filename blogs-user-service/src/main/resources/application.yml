@@ -1,0 +1,11 @@
+server:
+  port: 1212
+spring:
+  application:
+    name: blogs-user-service
+eureka:
+  instance:
+    appname: blogs-user-service
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
