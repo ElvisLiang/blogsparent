@@ -16,6 +16,16 @@
     from AUTHORITY
     where A_ID = #{aId,jdbcType=INTEGER}
   </select>
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+      SELECT
+    A.A_ID, A.NAME, A.DESCRIPTION, A.URL
+    from USER U
+    LEFT JOIN USERROLE UR ON U.U_ID=UR.U_ID
+    LEFT JOIN ROLE R ON R.R_ID=UR.R_ID
+    LEFT JOIN ROLEAUTHORITY RA ON RA.R_ID=R.R_ID
+    LEFT JOIN AUTHORITY A ON A.A_ID=RA.A_ID
+    where U.U_ID=#{uId}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from AUTHORITY
     where A_ID = #{aId,jdbcType=INTEGER}

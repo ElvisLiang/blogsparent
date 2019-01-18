@@ -10,6 +10,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>blogs-auth-service</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.2.6</version>
+        </dependency>
 
+        <!--导入用户服务-->
+        <dependency>
+            <groupId>com.blogs.exalt</groupId>
+            <artifactId>blogs-user-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

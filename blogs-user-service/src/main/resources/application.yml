@@ -3,9 +3,19 @@ server:
 spring:
   application:
     name: blogs-user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    data-username: root
+    data-password: root
+    url: jdbc:mysql://47.106.184.53:3300/blogs
+    type: com.alibaba.druid.pool.DruidDataSource
 eureka:
   instance:
     appname: blogs-user-service
+    hostname: blogs-user-service
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka/
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.blogs.user.entity

@@ -19,6 +19,16 @@ public class User {
 
     private Date lastTime;
 
+    private Integer salt;
+
+    public Integer getSalt() {
+        return salt;
+    }
+
+    public void setSalt(Integer salt) {
+        this.salt = salt;
+    }
+
     public Integer getuId() {
         return uId;
     }

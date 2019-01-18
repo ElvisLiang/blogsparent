@@ -13,9 +13,7 @@
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

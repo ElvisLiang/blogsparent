@@ -16,6 +16,14 @@
     from ROLE
     where R_ID = #{rId,jdbcType=INTEGER}
   </select>
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    SELECT
+    R.R_ID, R.NAME, R.CREATE_TIME, R.DESCRIPTION
+    from USER U
+    LEFT JOIN USERROLE UR ON U.U_ID=UR.U_ID
+    LEFT JOIN ROLE R ON R.R_ID=UR.R_ID
+    where U.U_ID=#{uId}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from ROLE
     where R_ID = #{rId,jdbcType=INTEGER}

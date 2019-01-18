@@ -10,6 +10,7 @@
     <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
     <result column="LOGIN_COUNT" jdbcType="BIGINT" property="loginCount" />
     <result column="LAST_TIME" jdbcType="TIMESTAMP" property="lastTime" />
+    <result column="SALT" jdbcType="INTEGER" property="salt" />
   </resultMap>
   <sql id="Base_Column_List">
     U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME
@@ -20,9 +21,9 @@
     from USER
     where U_ID = #{uId,jdbcType=INTEGER}
   </select>
-  <select id="selectByUsername" parameterType="java.lang.String" resultType="BaseResultMap">
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME,SALT
     from USER
     WHERE USERNAME = #{username}
   </select>
@@ -33,10 +34,10 @@
   <insert id="insert" parameterType="com.blogs.user.entity.User">
     insert into USER (U_ID, USERNAME, PASSWORD, 
       NAME, MOBILE, CREATE_TIME, 
-      LOGIN_COUNT, LAST_TIME)
+      LOGIN_COUNT, LAST_TIME,SALT)
     values (#{uId,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{name,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{loginCount,jdbcType=BIGINT}, #{lastTime,jdbcType=TIMESTAMP})
+      #{loginCount,jdbcType=BIGINT}, #{lastTime,jdbcType=TIMESTAMP},#{salt,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.blogs.user.entity.User">
     insert into USER
