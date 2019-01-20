@@ -15,7 +15,7 @@ eureka:
     hostname: blogs-user-service
   client:
     service-url:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://localhost:8181/eureka/
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.blogs.user.entity

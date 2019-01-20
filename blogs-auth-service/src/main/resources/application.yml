@@ -1,11 +1,15 @@
 server:
   port: 5000
+  servlet:
+    context-path:  /blogs
 spring:
   application:
     name: blogs-auth-service
 eureka:
   client:
     service-url:
-      defaltZone: http://localhost:8080/eureka/
+      defaultZone: http://localhost:8181/eureka/
   instance:
     hostname: blogs-auth-service
+    appname: blogs-auth-service
+

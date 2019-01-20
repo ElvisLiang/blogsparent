@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient("blogs-user-service")
+@FeignClient(name = "blogs-user-service",url = "http://localhost:1212")
 public interface UserClient {
 
     /**
