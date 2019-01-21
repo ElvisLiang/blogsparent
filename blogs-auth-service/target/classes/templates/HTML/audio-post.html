@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Blogio clean and simple blog template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blogio</title>
+
+	<!-- Sanitize.css -->
+	<link rel="stylesheet" href="styles/sanitize.css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="styles/animate.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+
+	<!-- Light Gallery -->
+	<link rel="stylesheet" href="plugins/lightgallery/lightgallery.min.css">
+
+	<!-- Social likes -->
+	<link rel="stylesheet" href="plugins/social-likes/social-likes.css">
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+
+	<!-- Unsemantic -->
+	<link rel="stylesheet" href="styles/unsemantic-grid.css">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="styles/main.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700%7CKaushan+Script%7CMontserrat:700' rel='stylesheet' type='text/css'>
+
+	<!-- Modernizr -->
+	<script src="scripts/modernizr-custom.js"></script>
+
+</head>
+<body>
+
+	<!-- BEGIN LOADER -->
+	<div class="site-loader">
+		<div class="site-loader-inner">
+			<div class="site-loader-heading">
+				Welcome to Blogio
+			</div>
+			<div class="site-loader-indicator">
+				<div class="loader"></div>
+			</div>
+		</div>
+		<button class="btn-site-loader-close">Close <i class="fa fa-close"></i></button>
+	</div>
+	<!-- END LOADER -->
+
+	<div class="wrapper">
+
+		<!-- BEGIN HEADER -->
+		<header class="site-header">
+
+			<div class="container">
+
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" width="50" height="79" alt="Blogio"></a>
+				</div>
+
+				<ul class="nav-social">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+				</ul>
+
+				<form class="form-search">
+					<input type="search" placeholder="Search something…">
+					<button class="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+
+			</div>
+
+			<nav class="nav-main">
+				<div class="container">
+					<ul>
+						<li class="nav-main-item ">
+							<a class="nav-main-link" href="#">Home</a>
+							<div class="nav-main-sub">
+								<ul>
+									<li><a href="index.html">Default</a></li>
+									<li><a href="index-type-2.html">Masonry</a></li>
+									<li><a href="index-type-3.html">Sidebar right</a></li>
+									<li><a href="index-type-4.html">Sidebar left</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-main-item active">
+							<a class="nav-main-link" href="#">Posts</a>
+							<div class="nav-main-sub">
+								<ul>
+									<li><a href="post.html">Standard post</a></li>
+									<li><a href="image-post.html">Image post</a></li>
+									<li><a href="gallery-post.html">Gallery post</a></li>
+									<li><a href="video-post.html">Video post</a></li>
+									<li><a href="audio-post.html">Audio post</a></li>
+									<li><a href="quote-post.html">Quote post</a></li>
+									<li><a href="link-post.html">Link post</a></li>
+									<li><a href="sidebar-left.html">Sidebar left</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-main-item "><a class="nav-main-link" href="about.html">About</a></li>
+						<li class="nav-main-item ">
+							<a class="nav-main-link" href="#">Other</a>
+							<div class="nav-main-sub">
+								<ul>
+									<li><a href="error-404.html">Error 404</a></li>
+									<li><a href="typography.html">Typography</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-main-item "><a class="nav-main-link" href="contacts.html">Contacts</a></li>
+					</ul>
+				</div>
+				<button class="hamburger hamburger--spin" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</nav>
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- BEGIN CONTENT -->
+		<main class="site-content">
+			<div class="container">
+
+<div class="grid-container">
+	<div class="grid-70">
+
+		<article class="post format-audio margin-bottom">
+			<div class="entry-media">
+				<iframe width="900" height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200083292&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			</div>
+			<header class="entry-header">
+				<div class="icon-b">
+					<i class="fa fa-music"></i>
+				</div>
+				<div class="entry-category"><a href="">Lifestyle</a></div>
+				<div class="entry-header-title">
+					<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+					<div class="entry-meta">
+						<span class="entry-meta-date">
+							<i class="fa fa-calendar"></i>
+							May 5, 2016
+						</span>
+						<span class="entry-meta-comments">
+							<i class="fa fa-comments"></i>
+							10 comments
+						</span>
+					</div>
+				</div>
+			</header>
+			<div class="entry-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum beatae obcaecati error officiis laboriosam. Quidem totam impedit qui, animi maiores incidunt vitae fugiat nulla ea tenetur sunt veniam consequatur vero, voluptatibus doloremque enim dicta consectetur odio error eaque nobis tempora dolore, commodi adipisci inventore! Deserunt ipsa officiis aliquam nobis harum voluptates non enim reprehenderit suscipit nesciunt autem nostrum, id, facilis quo doloremque. Inventore beatae, nam officiis recusandae doloremque facilis quasi eos tempora explicabo ab, dolor amet laudantium consectetur quia rem laboriosam? Nulla cumque saepe, totam labore, natus odit, ut illo voluptates ea voluptatibus officiis quidem veritatis vitae sit soluta mollitia! Nisi illum fuga eaque ad quaerat, molestias aut praesentium? Molestiae quaerat eum accusantium aspernatur, asperiores numquam veritatis facere? Eveniet, quas?</p>
+				<h2>Blanditiis minima</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quis illum, culpa! Expedita ipsam earum vel, quibusdam perferendis totam exercitationem perspiciatis est aut itaque debitis magnam tenetur maiores! Labore dolorem architecto quo totam nobis possimus nesciunt fugit eius impedit tenetur tempora blanditiis id ut aliquid, illo aliquam iure, alias. Tempora cum harum, veritatis nisi quo voluptatum nostrum molestias doloremque quia. Doloremque debitis, iusto, repellat quaerat adipisci laboriosam cumque ratione qui quam officiis praesentium fugiat unde delectus molestias explicabo impedit earum veniam harum facere quo! Obcaecati voluptatem ipsum perspiciatis ducimus, laudantium cupiditate, qui et sed blanditiis quas omnis quibusdam, harum reprehenderit.</p>
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, obcaecati molestias expedita delectus, facere temporibus esse assumenda sint nam dignissimos sunt eius voluptatibus libero. Provident commodi molestias perspiciatis repellendus adipisci beatae eligendi aspernatur. Nulla iste modi, officia sapiente facilis sint, excepturi asperiores accusamus distinctio commodi nihil, fuga odio dolorem quisquam.</p>
+				</blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reiciendis earum voluptas laboriosam, magni fugit officiis doloremque. Officiis ullam adipisci alias consequatur ipsam reprehenderit, explicabo expedita hic atque, et nostrum iste beatae voluptatem nisi architecto qui deserunt esse ad, sequi aliquam rerum incidunt! Officia laborum pariatur libero, error dolor vitae!</p>
+				<h3>Asperiores blanditiis</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sit voluptates, laborum libero voluptatem quos, id numquam at nihil accusamus! Aut fuga porro possimus ullam non ipsam dolor modi doloremque neque incidunt hic totam beatae ex nam voluptatibus, deserunt dolore vitae repudiandae laudantium magni sapiente, quo dignissimos! Suscipit iste eligendi repellat necessitatibus, nihil quaerat saepe blanditiis nostrum quisquam, minima possimus. Reprehenderit distinctio voluptatem animi, magni nostrum, consectetur perferendis harum modi possimus exercitationem perspiciatis fugiat temporibus ducimus necessitatibus reiciendis aperiam velit officiis, eaque, quia neque vel nulla autem aspernatur dolores. Necessitatibus blanditiis est, ea labore reiciendis quod omnis. Delectus nemo, saepe?</p>
+			</div>
+			<footer class="entry-footer">
+				<h3>Tags</h3>
+				<div class="tags">
+					<a href="">Web</a>
+					<a href="">Photography</a>
+					<a href="">Art</a>
+					<a href="">Video</a>
+					<a href="">Mobile</a>
+					<a href="">Classic</a>
+					<a href="">Print</a>
+					<a href="">Advertising</a>
+				</div>
+				<h3>Share</h3>
+				<div class="social-likes social-likes_notext">
+					<div class="facebook" title="Share link on Facebook"></div>
+					<div class="twitter" title="Share link on Twitter"></div>
+					<div class="plusone" title="Share link on Google+"></div>
+				</div>
+			</footer>
+		</article>
+
+<h3><i class="fa fa-comments"></i> 5 Comments</h3>
+<ol class="comments-list">
+	<li class="comment">
+		<div class="comment-body">
+			<header class="comment-meta">
+				<div class="comment-author vcard">
+					<img class="avatar photo" src="images/avatar-2.jpg" alt="">
+					<span class="fn">Antonio</span>
+					<span class="says"> says:</span>
+				</div>
+				<div class="comment-metadata">
+					<a href="">August 12, 2013 at 5:02 pm</a>
+				</div>
+			</header>
+			<div class="comment-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga provident, accusantium qui non ipsa aperiam.</p>
+			</div>
+			<div class="reply">
+				<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+			</div>
+		</div>
+		<ol class="children">
+			<li class="comment bypostauthor">
+				<div class="comment-body">
+					<header class="comment-meta">
+						<div class="comment-author vcard">
+							<img class="avatar photo" src="images/avatar-1.jpg" alt="">
+							<span class="fn">Lily</span>
+							<span class="says"> says:</span>
+						</div>
+						<div class="comment-metadata">
+							<a href="">August 12, 2013 at 5:02 pm</a>
+						</div>
+					</header>
+					<div class="comment-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate, magni velit alias ducimus ea veritatis sapiente explicabo consequatur dolor!</p>
+					</div>
+					<div class="reply">
+						<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+					</div>
+				</div>
+			</li>
+		</ol>
+	</li>
+	<li class="comment">
+		<div class="comment-body">
+			<header class="comment-meta">
+				<div class="comment-author vcard">
+					<img class="avatar photo" src="images/avatar-2.jpg" alt="">
+					<span class="fn">Antonio</span>
+					<span class="says"> says:</span>
+				</div>
+				<div class="comment-metadata">
+					<a href="">August 12, 2013 at 5:02 pm</a>
+				</div>
+			</header>
+			<div class="comment-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati soluta sint cumque iure dolorum atque facilis fugit id error, officiis aut, perferendis alias accusamus repellat, voluptas magni facere excepturi quas!</p>
+			</div>
+			<div class="reply">
+				<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+			</div>
+		</div>
+		<ol class="children">
+			<li class="comment bypostauthor">
+				<div class="comment-body">
+					<header class="comment-meta">
+						<div class="comment-author vcard">
+							<img class="avatar photo" src="images/avatar-1.jpg" alt="">
+							<span class="fn">Lily</span>
+							<span class="says"> says:</span>
+						</div>
+						<div class="comment-metadata">
+							<a href="">August 12, 2013 at 5:02 pm</a>
+						</div>
+					</header>
+					<div class="comment-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eaque sunt fugit eveniet, sit culpa in nobis. Laborum, qui, voluptatem!</p>
+					</div>
+					<div class="reply">
+						<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+					</div>
+				</div>
+				<ol class="children">
+					<li class="comment">
+						<div class="comment-body">
+							<header class="comment-meta">
+								<div class="comment-author vcard">
+									<img class="avatar photo" src="images/avatar-3.jpg" alt="">
+									<span class="fn">Antonio</span>
+									<span class="says"> says:</span>
+								</div>
+								<div class="comment-metadata">
+									<a href="">August 12, 2013 at 5:02 pm</a>
+								</div>
+							</header>
+							<div class="comment-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi consectetur fuga amet. Reiciendis, accusantium?</p>
+							</div>
+							<div class="reply">
+								<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+							</div>
+						</div>
+						<ol class="children">
+							<li class="comment bypostauthor">
+								<div class="comment-body">
+									<header class="comment-meta">
+										<div class="comment-author vcard">
+											<img class="avatar photo" src="images/avatar-1.jpg" alt="">
+											<span class="fn">Lily</span><span class="says"> says:</span>
+										</div>
+										<div class="comment-metadata">
+											<a href="">August 12, 2013 at 5:02 pm</a>
+										</div>
+									</header>
+									<div class="comment-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptates, et sunt dolor commodi necessitatibus debitis a. Neque suscipit molestiae ullam, harum at tempora autem?</p>
+									</div>
+									<div class="reply">
+										<a class="comment-reply-link btn-inline" href=""><span>Reply</span></a>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+
+<hr>
+
+<h3><i class="fa fa-commenting"></i> Leave a Comment</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio fugit sequi, perferendis quisquam totam natus repellendus ipsum dignissimos possimus, praesentium molestiae corporis iure sed sapiente, ab eveniet ratione, nemo provident officia minima modi eligendi adipisci. Et repellat suscipit quisquam ullam nostrum sint voluptate, nobis eligendi explicabo nesciunt ipsa dignissimos, eaque!</p>
+
+<div class="comment-respond">
+	<form>
+		<div class="grid-container">
+			<div class="grid-50">
+				<p>
+					<label>Name:</label>
+					<input type="text" name="name" required>
+				</p>
+			</div>
+			<div class="grid-50">
+				<p>
+					<label>E-mail:</label>
+					<input type="email" name="email" required>
+				</p>
+			</div>
+		</div>
+		<p>
+			<label>Comment:</label>
+			<textarea cols="90" rows="8" name="message" required></textarea>
+		</p>
+		<input type="submit" class="btn" value="Submit a comment">
+	</form>
+</div>
+
+
+	</div>
+	<div class="grid-30">
+<aside class="site-aside">
+
+	<div class="widget widget-about">
+		<div class="widget-about-photo">
+			<img src="images/avatar-1.jpg" width="80" height="80" alt="">
+		</div>
+		<p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor.</p>
+		<img src="images/signature.png" width="100" height="25" alt="">
+	</div>
+
+	<div class="widget">
+		<div class="calendar_wrap">
+			<table>
+				<caption>July 2016</caption>
+				<thead>
+					<tr>
+						<th scope="col" title="Monday">M</th>
+						<th scope="col" title="Tuesday">T</th>
+						<th scope="col" title="Wednesday">W</th>
+						<th scope="col" title="Thursday">T</th>
+						<th scope="col" title="Friday">F</th>
+						<th scope="col" title="Saturday">S</th>
+						<th scope="col" title="Sunday">S</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="3"><a href="">« Jun</a></td>
+						<td class="pad">&nbsp;</td>
+						<td colspan="3"><a href="">Aug »</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td colspan="4" class="pad">&nbsp;</td>
+						<td id="today">1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td><a href="">12</a></td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="widget">
+		<h3 class="widget-title">Recent Posts</h3>
+		<ul>
+			<li><a href="">Phasellus lobortis blandit ipsum</a> <span>February 24, 2013</span></li>
+			<li><a href="">Nulla sed mi leo</a> <span>March 13, 2013</span></li>
+			<li><a href="">Ut luctus fermentum commodo, mauris eget justo</a> <span>January 20, 2013</span></li>
+			<li><a href="">Phasellus lobortis blandit ipsum</a> <span>April 11, 2013</span></li>
+			<li><a href="">Maecenas eu lorem hendrerit</a> <span>February 11, 2013</span></li>
+			<li><a href="">Consectetur adipiscing elit</a> <span>May 7, 2013</span></li>
+		</ul>
+	</div>
+
+	<div class="widget">
+		<h3 class="widget-title">Categories</h3>
+		<ul>
+			<li><a href="">Design</a></li>
+			<li><a href="">Photography</a></li>
+			<li><a href="">Marketing</a></li>
+			<li><a href="">Mobile</a></li>
+			<li><a href="">Print</a></li>
+			<li><a href="">Advertising</a></li>
+			<li><a href="">Uncategorized</a></li>
+		</ul>
+	</div>
+
+	<div class="widget">
+		<h3 class="widget-title">Archives</h3>
+		<ul>
+			<li><a href="">October 2013</a></li>
+			<li><a href="">September 2013</a></li>
+			<li><a href="">August 2013</a></li>
+			<li><a href="">July 2013</a></li>
+			<li><a href="">June 2013</a></li>
+			<li><a href="">May 2013</a></li>
+			<li><a href="">April 2013</a></li>
+		</ul>
+	</div>
+
+</aside>
+
+	</div>
+</div>
+
+
+			</div>
+		</main>
+		<!-- END CONTENT -->
+
+		<!-- BEGIN FOOTER -->
+		<footer class="site-footer">
+			<div class="container">
+
+				<div class="site-footer-inner margin-bottom">
+					<div class="grid-container">
+						<div class="grid-33 tablet-grid-33">
+							<div class="widget">
+								<h3 class="widget-title">About</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolore. Vero possimus labore quis, provident distinctio dicta voluptatem deserunt iusto nemo voluptates sint vel eveniet nulla quam illo ipsa dolorem!</p>
+								<ul class="nav-social">
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="grid-33 tablet-grid-33">
+							<div class="widget">
+								<h3 class="widget-title">Tweets</h3>
+								<div id="tweets" class="tweets" data-id="345502025829724160"></div>
+							</div>
+						</div>
+						<div class="grid-33 tablet-grid-33">
+							<div class="widget">
+								<h3 class="widget-title">Popular Tags</h3>
+								<div class="tags">
+									<a href="">Must see</a>
+									<a href="">Awesome</a>
+									<a href="">Lovely</a>
+									<a href="">Motivation</a>
+									<a href="">Hot</a>
+									<a href="">Interesting</a>
+									<a href="">Inspiration</a>
+									<a href="">Future</a>
+									<a href="">Growth</a>
+									<a href="">My day</a>
+									<a href="">Positive</a>
+									<a href="">Tools</a>
+									<a href="">Style</a>
+									<a href="">Smile</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="center">Copyright 2016 ©. Handcrafted by <a href="themeforest.net/user/alexilin">alexilin</a></p>
+
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="scripts/jquery.min.js"></script>
+
+	<!-- Masonry -->
+	<script src="plugins/masonry/masonry.pkgd.min.js"></script>
+
+	<!-- Imagesloaded -->
+	<script src="plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+
+	<!-- Light Gallery -->
+	<script src="plugins/lightgallery/lightgallery.min.js"></script>
+
+	<!-- Social Likes -->
+	<script src="plugins/social-likes/social-likes.min.js"></script>
+
+	<!-- Swiper -->
+	<script src="plugins/swiper/swiper.min.js"></script>
+
+	<!-- Twitter Fetcher -->
+	<script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script>
+
+	<!-- Validation -->
+	<script src="plugins/jquery-validation/jquery.validate.min.js"></script>
+
+	<!-- Functions -->
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

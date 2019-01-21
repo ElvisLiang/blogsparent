@@ -5,6 +5,17 @@ server:
 spring:
   application:
     name: blogs-auth-service
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/templates/HTML/
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  thymeleaf:
+    cache: false
 eureka:
   client:
     service-url:
@@ -12,4 +23,3 @@ eureka:
   instance:
     hostname: blogs-auth-service
     appname: blogs-auth-service
-

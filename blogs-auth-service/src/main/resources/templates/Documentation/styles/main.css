@@ -1,0 +1,133 @@
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	padding: 50px 0 0;
+}
+h2:first-child {
+	padding: 0;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p,
+ul,
+ol,
+pre {
+	font-size: 0.8em;
+}
+
+p code {
+	padding: 2px 5px;
+	background: #f5f5f5;
+	border-radius: 5px;
+}
+
+pre,
+code {
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+a {
+	font-weight: bold;
+	color: #CDB586;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+.row {
+	margin-left: -50px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.col {
+	border: 0 solid rgba(0,0,0,0);
+	border-left-width: 50px;
+	float: left;
+	box-sizing: border-box;
+	background-clip: padding-box !important;
+}
+.span_1 {
+	width: 8.33333333333%;
+}
+.span_2 {
+	width: 16.6666666667%;
+}
+.span_3 {
+	width: 25.0%;
+}
+.span_4 {
+	width: 33.3333333333%;
+}
+.span_5 {
+	width: 41.6666666667%;
+}
+.span_6 {
+	width: 50.0%;
+}
+.span_7 {
+	width: 58.3333333333%;
+}
+.span_8 {
+	width: 66.6666666667%;
+}
+.span_9 {
+	width: 75.0%;
+}
+.span_10 {
+	width: 83.3333333333%;
+}
+.span_11 {
+	width: 91.6666666667%;
+}
+.span_12 {
+	width: 100%;
+}
+
+.main-header {
+	margin: 0 0 80px;
+	padding: 80px 0;
+	background: #E8E8E8;
+}
+.main-header p {
+	font-size: 1em;
+}
+
+.main-content {
+	padding: 0 0 50px;
+}
+
+.nav-main ul {
+	padding: 0;
+	list-style: none;
+}
+.nav-main li {
+	margin: 0 0 5px;
+}
+.nav-main a {
+	display: block;
+	padding: 10px;
+	background: #f5f5f5;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+.nav-main.affix {
+	position: fixed;
+	top: 0;
+	width: 260px;
+}

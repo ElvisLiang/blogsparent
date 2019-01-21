@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blogio Template Documentation</title>
+	<meta name="description" content="Indivo Onepage Personal Template Documentation">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="stylesheet" href="styles/sanitize.css">
+
+	<link rel="stylesheet" href="plugins/prism/prism.css">
+
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+	<header class="main-header">
+		<div class="container">
+			<h1>Blogio Template Documentation</h1>
+			<p>Thank you for purchasing this template. If you have any questions that are beyond the scope of this help file, please feel free to email me.</p>
+			<small>
+				Author: <a href="http://themeforest.net/user/alexilin">http://themeforest.net/user/alexilin</a><br>
+				Email: <a href="mailto:alexilin83@gmail.com">alexilin83@gmail.com</a>
+			</small>
+		</div>
+	</header>
+	<main class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col span_3">
+					<nav class="nav-main">
+						<ul class="nav">
+							<li><a href="#general">General</a></li>
+							<li><a href="#grid">Grid System</a></li>
+							<li><a href="#icons">Icons</a></li>
+							<li><a href="#slideshow">Slideshows &amp; carousels</a></li>
+							<li><a href="#popup-gallery">Popup gallery</a></li>
+							<li><a href="#tweets">Tweets</a></li>
+							<li><a href="#map">Map</a></li>
+							<li><a href="#contact-form">Contact form</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col span_9">
+
+					<h2 id="general">General</h2>
+					<h3>Layout</h3>
+					<p>This template has responsive layout. There are 3 main layout modes related to the device width.</p>
+					<ul>
+						<li><b>Mobile</b> - less than 1024px</li>
+						<li><b>Tablet</b> - equal or more than 1024px and less than 1280px</li>
+						<li><b>Desktop</b> - equal or more than 1280px</li>
+					</ul>
+					<h3>HTML</h3>
+					<p>The general template structure is the same throughout the template. Here is the general structure.</p>
+<pre><code class="language-html">&lt;!-- BEGIN LOADER --&gt;
+&lt;div class=&quot;site-loader&quot;&gt;
+&Tab;&hellip;
+&lt;/div&gt;
+&lt;!-- END LOADER --&gt;
+
+&lt;div class=&quot;wrapper&quot;&gt;
+
+&Tab;&lt;!-- BEGIN HEADER --&gt;
+&Tab;&lt;header class=&quot;site-header&quot;&gt;
+
+&Tab;&Tab;&lt;div class=&quot;container&quot;&gt;
+
+&Tab;&Tab;&Tab;&lt;div class=&quot;logo&quot;&gt;
+&Tab;&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&Tab;&lt;/div&gt;
+
+&Tab;&Tab;&Tab;&lt;ul class=&quot;nav-social&quot;&gt;
+&Tab;&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&Tab;&lt;/ul&gt;
+
+&Tab;&Tab;&Tab;&lt;form class=&quot;form-search&quot;&gt;
+&Tab;&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&Tab;&lt;/form&gt;
+
+&Tab;&Tab;&lt;/div&gt;
+
+&Tab;&Tab;&lt;nav class=&quot;nav-main&quot;&gt;
+&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&lt;/nav&gt;
+
+&Tab;&lt;/header&gt;
+&Tab;&lt;!-- END HEADER --&gt;
+
+&Tab;&lt;!-- BEGIN CONTENT --&gt;
+&Tab;&lt;main class=&quot;site-content&quot;&gt;
+&Tab;&Tab;&lt;div class=&quot;container&quot;&gt;
+&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&lt;/div&gt;
+&Tab;&lt;/main&gt;
+&Tab;&lt;!-- END CONTENT --&gt;
+
+&Tab;&lt;!-- BEGIN FOOTER --&gt;
+&Tab;&lt;footer class=&quot;site-footer&quot;&gt;
+&Tab;&Tab;&lt;div class=&quot;container&quot;&gt;
+
+&Tab;&Tab;&Tab;&lt;div class=&quot;site-footer-inner margin-bottom&quot;&gt;
+&Tab;&Tab;&Tab;&Tab;&hellip;
+&Tab;&Tab;&Tab;&lt;/div&gt;
+
+&Tab;&Tab;&Tab;&lt;p class=&quot;center&quot;&gt;Copyright 2016 &copy;.&lt;/p&gt;
+
+&Tab;&Tab;&lt;/div&gt;
+&Tab;&lt;/footer&gt;
+&Tab;&lt;!-- END FOOTER --&gt;
+
+&lt;/div&gt;</code></pre>
+					<h3>CSS</h3>
+					<p>Template includes 4 main CSS files.</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/main.css&quot;&gt;</code></pre>
+					<p>The main.css file contains all of the specific stylings for the page.</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/animate.min.css&quot;&gt;</code></pre>
+					<p>Animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects.</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/sanitize.css&quot;&gt;</code></pre>
+					<p>Sanitize.css makes browsers render elements consistently and allows you to style with today’s best practices out-of-the-box.</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/unsemantic-grid.css&quot;&gt;</code></pre>
+					<p>Unsemantic-grid.css is a fluid grid system for mobile, tablet, and desktop.</p>
+					<p>Also there are several third-party css filess:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.3.3/dist/leaflet.css&quot; integrity=&quot;sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==&quot; crossorigin=&quot;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/lightgallery/lightgallery.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/social-likes/social-likes.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/swiper/swiper.min.css&quot;&gt;</code></pre>
+					<p>And some css for custom fonts:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/font-awesome.min.css&quot;&gt;
+&lt;link href=&#039;https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700%7CKaushan+Script%7CMontserrat:700&#039; rel=&#039;stylesheet&#039;&gt;</code></pre>
+					<h3>Javascript</h3>
+					<p>Template includes 3 main javascript files.</p>
+<pre><code class="language-html">&lt;script src=&quot;scripts/modernizr-custom.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;scripts/main.js&quot;&gt;&lt;/script&gt;</code></pre>
+					<p>Modernizr.js custom libraries, jQuery framework for quick javascript coding and main.js file with custom scripts and third-party scripts initialization.</p>
+					<p>Also template imports several third-party javascript files.</p>
+<pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/leaflet@1.3.3/dist/leaflet.js&quot; integrity=&quot;sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==&quot; crossorigin=&quot;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/masonry/masonry.pkgd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/imagesloaded/imagesloaded.pkgd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/lightgallery/lightgallery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/social-likes/social-likes.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/swiper/swiper.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/twitter-fetcher/twitterFetcher_min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/jquery-validation/jquery.validate.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+					<h3>PHP</h3>
+					<p>Template includes sendmail.php file and PHPMailer library that are needed for sending messages from the site.</p>
+
+					<h2 id="grid">Grid system</h2>
+					<p>All grid units are contained within a top level element, with the class name <code>grid-container</code>. Here is an example of a simple use case.</p>
+<pre><code class="language-html">&lt;div class=&quot;grid-container&quot;&gt;
+	&lt;div class=&quot;grid-50&quot;&gt;
+		I am 50% wide.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25&quot;&gt;
+		I am 25% wide.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25&quot;&gt;
+		I am 25% wide.
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<p>There are grid classes named grid-x where "x" is a number that represents the percentage width of each grid unit. These cover multiples of 5, up to 100 — grid-5, grid-10 … grid-95, grid-100. There are also classes for dividing a page into thirds: grid-33 and grid-66 which are 33.3333% and 66.6667% wide, respectively.</p>
+					<h3>Mobile classes</h3>
+					<p>There are also <code>mobile-grid-x</code> classes that can be applied, to create a separate visual grid for devices that have a screen width lower than 767px. This allows you to mix class names, for a different layout on desktop and mobile.</p>
+<pre><code class="language-html">&lt;div class=&quot;grid-container&quot;&gt;
+	&lt;div class=&quot;grid-50 mobile-grid-100&quot;&gt;
+		I am 50% wide on desktop.
+		I am 100% wide on mobile.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25 mobile-grid-50&quot;&gt;
+		I am 25% wide on desktop.
+		I am 50% wide on mobile.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25 mobile-grid-50&quot;&gt;
+		&lt;span class=&quot;hide-on-desktop&quot;&gt;
+			I am hidden on desktop.
+		&lt;/span&gt;
+		&lt;span class=&quot;hide-on-mobile&quot;&gt;
+			I am hidden on mobile.
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<p>If you want to hide/show content based on mobile or desktop widths, you can use hide-on-mobile and hide-on-desktop.</p>
+					<h3>Tablet classes</h3>
+					<p>Also there are corresponding <code>tablet-*</code> classes. They are applicable between the widths of 768px and 1024px (typical dimensions on an iPad). Here is the previous code example, with tablet classes added.</p>
+<pre><code class="language-html">&lt;div class=&quot;grid-container&quot;&gt;
+	&lt;div class=&quot;grid-50 mobile-grid-100 tablet-grid-50&quot;&gt;
+		I am 50% wide on desktop.
+		I am 100% wide on mobile.
+		I am 50% wide on tablet.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25 mobile-grid-50 tablet-grid-50&quot;&gt;
+		I am 25% wide on desktop.
+		I am 50% wide on mobile.
+		I am 50% wide on tablet.
+	&lt;/div&gt;
+	&lt;div class=&quot;grid-25 mobile-grid-50 tablet-grid-100&quot;&gt;
+		&lt;span class=&quot;hide-on-desktop&quot;&gt;
+			I am hidden on desktop.
+		&lt;/span&gt;
+		&lt;span class=&quot;hide-on-mobile&quot;&gt;
+			I am hidden on mobile.
+		&lt;/span&gt;
+		&lt;span class=&quot;hide-on-tablet&quot;&gt;
+			I am hidden on tablet.
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<p>You can find more details <a href="http://unsemantic.com/css-documentation">here</a>.</p>
+
+					<h2 id="icons">Icons</h2>
+					<p>You can place Font Awesome icons just about anywhere using the CSS prefix <code>fa</code> and the icon's name. Font Awesome is designed to be used with inline elements (like the <code>i</code> or <code>span</code> tag).</p>
+<pre><code class="language-html">&lt;i class=&quot;fa fa-mobile-phone&quot;&gt;&lt;/i&gt;</code></pre>
+					<p>	Get more information about Font Awesome icons <a href="https://fontawesome.com/v4.7.0/icons/">here</a>.</p>
+
+					<h2 id="slideshow">Slideshows &amp; carousels</h2>
+					<p>Here is an example of a basic slideshow layout.</p>
+<pre><code class="language-html">&lt;!-- Slideshow main container --&gt;
+&lt;div class=&quot;swiper-container&quot;&gt;
+	&lt;!-- Additional required wrapper --&gt;
+	&lt;div class=&quot;swiper-wrapper&quot;&gt;
+		&lt;!-- Slides --&gt;
+		&lt;div class=&quot;swiper-slide&quot;&gt;Slide 1&lt;/div&gt;
+		&lt;div class=&quot;swiper-slide&quot;&gt;Slide 2&lt;/div&gt;
+		&lt;div class=&quot;swiper-slide&quot;&gt;Slide 3&lt;/div&gt;
+		...
+	&lt;/div&gt;
+	&lt;!-- If we need pagination --&gt;
+	&lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+
+	&lt;!-- If we need navigation buttons --&gt;
+	&lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+
+	&lt;!-- If we need scrollbar --&gt;
+	&lt;div class=&quot;swiper-scrollbar&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<p>You can specify slideshow params with <code>data-slideshow-options</code> attribute.</p>
+<pre><code class="language-html">&lt;div class=&quot;swiper-container&quot; data-slideshow-options=&#039;{&quot;slidesPerView&quot;:3}&#039;&gt;
+	...
+&lt;/div&gt;</code></pre>
+					<p>See all options <a href="http://idangero.us/swiper/api/#.V0_1POSqEtQ">here</a>.</p>
+
+					<h2 id="popup-gallery">Popup gallery</h2>
+					<p>Template has ability to create beautiful image &amp; video galleries. To create gallery you can use whatever markup you want. But i suggest you to use the following markup.</p>
+<pre><code class="language-html">&lt;div class=&quot;gallery&quot;&gt;
+&Tab;&lt;a href=&quot;images/photo-1.jpg&quot;&gt;
+&Tab;&Tab;&lt;img src=&quot;images/thumb-1.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot;&gt;
+&Tab;&lt;/a&gt;
+&Tab;&lt;a href=&quot;images/photo-2.jpg&quot;&gt;
+&Tab;&Tab;&lt;img src=&quot;images/thumb-2.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot;&gt;
+&Tab;&lt;/a&gt;
+&Tab;&lt;a href=&quot;images/photo-3.jpg&quot;&gt;
+&Tab;&Tab;&lt;img src=&quot;images/thumb-3.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot;&gt;
+&Tab;&lt;/a&gt;
+&Tab;&lt;a href=&quot;images/photo-4.jpg&quot;&gt;
+&Tab;&Tab;&lt;img src=&quot;images/thumb-4.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot;&gt;
+&Tab;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+					<p><a href="http://sachinchoolur.github.io/lightGallery/demos/html-markup.html">Here</a> you can find the detailed examples of deferent kind of markups.</p>
+
+					<h2 id="tweets">Tweets</h2>
+					<p>To display your last tweets, you need to do several steps.</p>
+					<ol>
+						<li>Go to <a href="http://www.twitter.com">www.twitter.com</a> and sign in as normal, go to your settings page.</li>
+						<li>Go to "Widgets" on the left hand side.</li>
+						<li>Create a new widget for what you need eg "user time line" or "search" etc.</li>
+						<li>Feel free to check "exclude replies" if you don't want replies in results.</li>
+						<li>Now go back to settings page, and then go back to widgets page and you should see the widget you just created. Click edit.</li>
+						<li>Look at the URL in your web browser, you will see a long number like this: 345735908357048478</li>
+						<li>Write this number in the <code>data-id</code> attribute of the div with an id of <code>tweets</code>.</li>
+					</ol>
+<pre><code class="language-html">&lt;div id=&quot;tweets&quot; class=&quot;tweets&quot; data-id=&quot;your-widget-id&quot;&gt;&lt;/div&gt;</code></pre>
+
+					<h2 id="map">Map</h2>
+					<p>To change map location, you need to change <code>data-latitude</code> and <code>data-longitude</code> attributes of the div with an id of <code>map</code>.</p>
+<pre><code class="language-html">&lt;div id=&quot;map&quot; class=&quot;map&quot; data-latitude=&quot;-37.817314&quot; data-longitude=&quot;144.955431&quot;&gt;&lt;/div&gt;</code></pre>
+					<p>Use this <a href="http://www.gps-coordinates.net/">service</a> to get your coordinates.</p>
+
+					<h2 id="contact-form">Contact form</h2>
+					<p>To enable sending mail feature, you need to fill sendmail.php file with your smtp details. <a href="https://github.com/PHPMailer/PHPMailer/blob/master/examples/gmail.phps">Here</a> you can see an example that shows settings to use when sending via Google's Gmail servers.</p>
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="scripts/jquery.min.js"></script>
+
+	<script src="plugins/prism/prism.js"></script>
+
+	<script src="plugins/sticky-kit/jquery.sticky-kit.min.js"></script>
+
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

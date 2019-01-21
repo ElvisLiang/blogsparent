@@ -21,10 +21,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class LoginController {
     private static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
+
+
     @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String login(Model model){
         model.addAttribute("user",new User());
         return "login";
+    }
+
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String index(Model model){
+        return "/HTML/index";
     }
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
