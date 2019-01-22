@@ -1,5 +1,7 @@
 package com.blogs.user.entity;
 
+import com.mysql.cj.jdbc.Blob;
+
 import java.util.Date;
 
 public class User {
@@ -20,6 +22,26 @@ public class User {
     private Date lastTime;
 
     private Integer salt;
+
+    private byte[] pictureBlob;
+
+    private String pictureUrl;
+
+    public byte[] getPictureBlob() {
+        return pictureBlob;
+    }
+
+    public void setPictureBlob(byte[] pictureBlob) {
+        this.pictureBlob = pictureBlob;
+    }
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
+    }
 
     public Integer getSalt() {
         return salt;

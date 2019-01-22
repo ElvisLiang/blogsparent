@@ -58,7 +58,7 @@ public class ShiroRealm extends AuthorizingRealm{
         User user = ConvertUtils.objectMapper.convertValue(resultMessage.getRecord(),User.class);
         SimpleHash simpleHash = new SimpleHash("MD5","123456",ByteSource.Util.bytes(String.valueOf(user.getSalt())),1024);
         System.out.println("------------------"+simpleHash.toString());
-        SimpleAuthenticationInfo simpleAuthorizationInfo = new SimpleAuthenticationInfo(user.getUsername(),user.getPassword(), ByteSource.Util.bytes(String.valueOf(user.getSalt())),getName());
+        SimpleAuthenticationInfo simpleAuthorizationInfo = new SimpleAuthenticationInfo(user,user.getPassword(), ByteSource.Util.bytes(String.valueOf(user.getSalt())),getName());
         return simpleAuthorizationInfo;
     }
 }

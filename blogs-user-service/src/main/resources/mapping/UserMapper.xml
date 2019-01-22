@@ -11,9 +11,10 @@
     <result column="LOGIN_COUNT" jdbcType="BIGINT" property="loginCount" />
     <result column="LAST_TIME" jdbcType="TIMESTAMP" property="lastTime" />
     <result column="SALT" jdbcType="INTEGER" property="salt" />
+    <result column="PICTURE" jdbcType="BLOB" property="pictureBlob" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
   </resultMap>
   <sql id="Base_Column_List">
-    U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME
+    U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME,PICTURE
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -23,7 +24,7 @@
   </select>
   <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
-    U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME,SALT
+    U_ID, USERNAME, PASSWORD, NAME, MOBILE, CREATE_TIME, LOGIN_COUNT, LAST_TIME,SALT,PICTURE
     from USER
     WHERE USERNAME = #{username}
   </select>
